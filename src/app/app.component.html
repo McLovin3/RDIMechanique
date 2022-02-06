@@ -1,19 +1,22 @@
-<div class="container-fluid text-white" style="background-image: linear-gradient(to bottom, #000000 50%, #1f1c1c);">
+<div class="container-fluid text-white" style="background-image: linear-gradient(to bottom, #0e0d0d 50%, #313131);">
 
   <header class="row">
     <div class="col mt-3">
-      <p class="float-start d-inline">
-        Téléphone : 514-638-6558<br>
-        Courriel : <a href="mailto:rdi.mechanique@gmail.com">rdi.mechanique@gmail.com</a><br>
-        Adresse : 1101 Rue Nobel (Locale A)
-      </p> 
-      <a href="#" class="text-white float-end" *ngIf="isEnglish" (click)="changeLanguage()">Francais</a>
-      <a href="#" class="text-white float-end"*ngIf="!isEnglish" (click)="changeLanguage()">English</a>
-      <img src="assets/logoRDI.png" alt="logoRDI" class="mx-auto d-block" style="height: 200px;">
+      <p class="text-decoration-underline h3">514-638-6558</p> 
+    </div>
+    <div class="col mt-3">
+      <a href="#" class="text-white float-end h3" *ngIf="isEnglish" (click)="changeLanguage()">Francais</a>
+      <a href="#" class="text-white float-end h3"*ngIf="!isEnglish" (click)="changeLanguage()">English</a>
+    </div>
+  </header>
+  
+  <div class="row">
+    <div class="col">
+      <img src="assets/logoRDI.png" alt="logoRDI" class="mx-auto img-fluid d-block" style="height: 200px;">
       <h2 class="text-center" *ngIf="!isEnglish">Réparation | Diagnostique | Inspection</h2>
       <h2 class="text-center" *ngIf="isEnglish">Reperation | Diagnostic | Inspection</h2>
     </div>
-  </header>
+  </div>
 
   <app-french *ngIf="!isEnglish"></app-french>
   <app-english *ngIf="isEnglish"></app-english>
