@@ -5,7 +5,7 @@
       <p class="text-decoration-underline h3">514-638-6558</p> 
     </div>
     <div class="col mt-3">
-      <a href="#" class="text-white float-end h3" *ngIf="isEnglish" (click)="changeLanguage()">Francais</a>
+      <a href="#" class="text-white float-end h3" *ngIf="isEnglish" (click)="changeLanguage()">Français</a>
       <a href="#" class="text-white float-end h3"*ngIf="!isEnglish" (click)="changeLanguage()">English</a>
     </div>
   </header>
@@ -13,8 +13,12 @@
   <div class="row">
     <div class="col">
       <img src="assets/logoRDI.png" alt="logoRDI" class="mx-auto img-fluid d-block" style="height: 200px;">
-      <h2 class="text-center" *ngIf="!isEnglish">Réparation | Diagnostique | Inspection</h2>
-      <h2 class="text-center" *ngIf="isEnglish">Reperation | Diagnostic | Inspection</h2>
+      <h2 class="text-center" *ngIf="!isEnglish"><span class="fw-bold" style="color: #0071ce;">R</span>éparation | 
+        <span class="fw-bold" style="color: #0071ce;">D</span>iagnostique | 
+        <span class="fw-bold" style="color: #0071ce;">I</span>nspection</h2>
+      <h2 class="text-center" *ngIf="isEnglish"><span class="fw-bold" style="color: #0071ce;">R</span>epair | 
+        <span class="fw-bold" style="color: #0071ce;">D</span>iagnostic | 
+        <span class="fw-bold" style="color: #0071ce;">I</span>nspection</h2>
     </div>
   </div>
 
